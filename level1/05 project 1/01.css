@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav h3{
+    font-size: 16px;
+    border: 1.5px solid black;
+    font-weight: 600px;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+#nav i{
+    font-size: 16px;
+    border: 1.5px solid black;
+    font-weight: 600px;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+#nav-part1{
+    font-weight:500;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+#nav button{
+    padding: 7px 12px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    font-size: 16px;
+    font-weight: 600;
+    /* background-color: white; */
+}
+#btn2 {
+    border: none;
+    color:#fff;
+    background-color: red;
+}
+#main>h1/*it means h1 which is directly inside main*/{
+    font-size: 150px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: red; */
+    width: 100%;
+    text-align: center;
+
+}
+img{
+    height: 450px;
+    width: 350px;
+    object-fit: cover;/*its necessary to fit the image*/
+    object-position: top;/*just write this to make it better*/
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+#img1{
+    transform: translate(-50%,-50%) rotate(-30deg);
+} 
+#img2{
+    transform: translate(-50%,-50%) rotate(-20deg);
+}
+#img3{
+    transform: translate(-50%,-50%) rotate(-10deg);
+}
+#img4{
+    transform: translate(-50%,-50%) rotate(0deg);
+}
+#btm-left{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: 17px;
+}
+#extra{
+    font-size: 16px;
+    width: 100px;
+    font-weight: 600px;
+    position: absolute;
+    bottom: 9%;
+    right: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+h6{
+    position: absolute;
+    bottom: 5%;
+    font-size: 17px;
+    right: 3%;
+}

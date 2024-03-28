@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={
+            message:'good job',
+            status:'complete',
+        };
+        console.log(obj);
+        console.log(obj.message);
+        console.log(obj.status);
+        //in above we access it normally
+        //we can de-structure it by doing:
+        let {message,status}=obj;
+        console.log(message)//here we dont have to do like console.log(obj.message) bcoz we already defined in let{message,status}=obj
+        console.log(status)
+
+    </script>
+    
+</body>
+</html>

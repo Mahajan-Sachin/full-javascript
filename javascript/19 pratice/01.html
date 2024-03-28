@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratice</title>
+</head>
+<body>
+    <h3 id="greeting">fkjhkudfhkdbhkdbh</h3>
+    <script>
+    let date=new Date();
+    console.log(date);
+    //from this we will get date month year time  but we want only time so
+    let hours=date.getHours();
+    console.log(hours);
+    let heading=document.querySelector("#greeting");
+    if(5<hours<12){
+        heading.innerText='good morning'
+    }else if (12<hour<16){
+        heading.innerText='Good Afternoon'
+    }else if(16<hour<20){
+        heading.innerText='good evening'
+    }else{
+        heading.innerText="good night"
+    }
+    </script>
+</body>
+</html>

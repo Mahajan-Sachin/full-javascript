@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        let product ={
+            company:"mango",
+            item_name:"cotton striped t shirt",
+            price:861,
+            //now there is problem with "-" this symbol
+            //you can see the problem in below product-type
+            //product-type  to solve the problem we can do
+            "product-type":"cloths",
+        };
+        //reading of object
+        console.log(product);
+        //accessing the value
+        console.log(product.company);
+        console.log(product.price);
+        console.log(product.item_name);
+        //we can also acces it by other method like
+        console.log(product["item_name"])//means we have to write key in ("")
+        console.log(product["product-type"])
+       
+    </script>
+</body>
+</html>

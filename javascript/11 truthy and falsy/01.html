@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>truthy anf falsy</title>
+ </head>
+ <body>
+    <script>
+//java considers{"",null,empty,undefined a falsy}
+        let age=1000; 
+        console.log(age)//here we will check our assumption
+        if(age){
+            console.log('you have a valid age')
+        }else{
+            console.log('you are legendary')
+        }
+
+        age="";//here i am not defining a age means undefined means infinite
+        console.log(age)//here we will check our assumption
+        if(age){
+            console.log('you have a valid age')
+        }else{
+            console.log('you are reincarnated')
+        }
+
+        age=null;//here i am  defining a age=null means undefined means nothing
+        console.log(age)//here we will check our assumption
+        if(age){
+            console.log('you have a not valid age')
+        }else{
+            console.log('you dont even born')
+        }
+
+
+        age=4/"horse"//it shows nan means not a number
+        console.log(age)//here we will check our assumption
+        if(age){
+            console.log('you are a scientist ')
+        }else{
+            console.log('you are a chutiya')
+        }
+
+         
+    </script>
+ </body>
+ </html>

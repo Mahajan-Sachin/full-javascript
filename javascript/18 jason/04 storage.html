@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product={
+            name:'Tshirt',
+            price:789,
+            rating:{
+                stars:4.5,
+                NoOfReviews:453,
+            },
+        };
+        // localStorage.setItem('name','KG Coding');
+        // // localStorage.setItem('price','58638');
+        console.log(localStorage.getItem('name'))
+        //here we can see even by commeting or removing the local storage it get inserted 
+        localStorage.setItem('product',JSON.stringify(product));
+        console.log(localStorage.getItem('product'));
+        
+        let product2=JSON.parse(localStorage.getItem('product'));
+        console.log(product2);
+    </script>
+</body>
+</html>

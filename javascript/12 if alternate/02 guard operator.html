@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guard operator</title>
+</head>
+<body>
+    <script>
+//used to define a default value
+        let age=32;
+        let finalAge=age || 18;
+        console.log(age);
+        console.log(finalAge);
+
+        let years_passing=0 ;//here it will take default
+        let finalYears=years_passing || 45
+        console.log(years_passing);
+        console.log(finalYears);//this will consider as a null or falsy 
+
+//default operator [now the problem is till now we have to get "0" in code by it will take it falsy so we use default 
+        let currentage=0;
+        let finalcurrentAge=currentage ??18;
+        console.log(currentage);
+        console.log(finalcurrentAge);
+
+</script>
+    
+</body>
+</html>

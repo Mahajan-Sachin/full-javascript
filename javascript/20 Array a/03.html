@@ -1,0 +1,36 @@
+<!-- splice function -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>slice</title>
+</head>
+
+<body>
+    <script>
+        let arr=[3,4,5,6,78];
+        console.log(arr)
+        arr.splice(1,2)
+        console.log(arr)
+
+        let arr2=[3,4,77,94,78];
+        console.log(arr.toString())//to string
+
+        let arr3=[1,8,7,6,5,2,9];
+        console.log(arr3)
+        arr3.sort();//sort function
+        console.log(arr3);
+        
+        b=arr3.valueOf()//copy of array
+        console.log(b)
+
+        //java works on refrence
+        a=[1,2,3,4,5,6,7,8]
+        let x=a;
+        a[0]=99;
+        console.log(x)
+
+        let[p,q,r,s]=arr;
+        console.log(p + " "+ q+ " " + r + " " + s )
+    </script>
+</body>
+</html>
